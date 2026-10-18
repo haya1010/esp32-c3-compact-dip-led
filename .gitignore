@@ -3,3 +3,6 @@
 *-backups/
 *.kicad_prl
 .DS_Store
+[#]auto_saved_files[#]
+_autosave-*
+verification/drc-report.txt

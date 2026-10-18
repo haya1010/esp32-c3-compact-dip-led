@@ -5,6 +5,7 @@
 - 電源ネット: USB_5V/DC_RAW → JP1 → REG_IN → 3.3 V buck → JP2 → SYS_3V3
 - 書き込み電源: A105 PROG_3V3 → JP2 → SYS_3V3
 - LED電力: DC_RAW → LED+、LED- → Q1 → GND
+- L1: C49009349、22µH、定格2A、飽和3.1A（1A級レギュレータに対して余裕あり）
 - USB信号: D+/D-未接続
 - 制約: JP1/JP2の両側ブリッジ禁止、同時給電禁止、センタープラス限定
 

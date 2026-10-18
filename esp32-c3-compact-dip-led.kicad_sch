@@ -7462,7 +7462,7 @@
 				)
 			)
 		)
-		(property "Value" "22uH >=1.5A"
+		(property "Value" "ZETC404020S-220MT-LF 22uH 2A Isat3.1A"
 			(at 330.2 76.2 0)
 			(effects
 				(font
