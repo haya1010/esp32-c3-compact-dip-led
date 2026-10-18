@@ -1,0 +1,30 @@
+Reference,Value/MPN,Footprint,LCSC,Assembly,Qty,Constraint / role,Indicative cost,Alternative / caveat
+U1,ESP32-C3-WROOM-02-N4,RF_Module:ESP32-C3-WROOM-02,C2934560,JLCPCB SMT,1,Wi-Fi/BLE controller,約400～700円,ESP32-C3-WROOM-02同一フットプリント品（容量差は要確認）
+U2,LMR36510FADDAR,Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm,C1858394,JLCPCB SMT,1,"65 V input synchronous buck, adjusted to 3.3 V",約200～500円,代替は65V級・同一ピン配置に限る。原則再設計
+J1,PJ-102A compatible 5.5/2.1mm,Connector_BarrelJack:BarrelJack_Horizontal,,HAND/THT,1,Center-positive DC 5-24 V input,約50～150円,PJ-102A互換、5.5/2.1mmセンタープラス
+J2,USB-C POWER ONLY,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,C165948,JLCPCB SMT,1,5 V power input; D+/D- intentionally unused,約30～100円,HRO TYPE-C-31-M-12互換フットプリント
+J3,LED OUT,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",,HAND/THT,1,"Pin 1 LED+, pin 2 MOSFET-switched LED-",約50～150円,5.00/5.08mmピッチ2極端子台
+J4,M5STACK A105,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,HAND/THT,1,"A105 direct header: GND,BOOT,EN,TXD,RXD,3V3",約20～50円,2.54mm 1x6ピンヘッダ
+JH1,DIP LEFT,Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical,,HAND/THT,1,2.54 mm breakout row,約30～80円,2.54mm 1x12ピンヘッダ
+JH2,DIP RIGHT,Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical,,HAND/THT,1,2.54 mm breakout row,約30～80円,2.54mm 1x12ピンヘッダ
+JP1,INPUT USB|DC,Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels,,HAND/SOLDER,1,Bridge 1-2 for USB or 2-3 for DC; never both,数円～数十円,同値・同耐圧・同サイズ品
+JP2,3V3 REG|A105,Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm_NumberLabels,,HAND/SOLDER,1,Bridge 1-2 for onboard regulator or 2-3 for programmer power; never both,数円～数十円,同値・同耐圧・同サイズ品
+Q1,RJP020N06T100,Package_TO_SOT_SMD:SOT-89-3,C703680,JLCPCB SMT,1,"60 V, 2 A, 2.5 V-drive N-MOSFET",約50～150円,NRND。置換時は60V以上、3.3Vゲート、SOT-89のピン配置を確認
+L1,22uH >=1.5A,Inductor_SMD:L_Vishay_IHLP-1616,C408353,JLCPCB SMT,1,Buck inductor,約50～200円,22uH、飽和電流1.5A以上、同一ランド寸法
+RFBT,57.6k 1%,Resistor_SMD:R_0603_1608Metric,C23206,JLCPCB SMT,1,Buck feedback upper; target about 3.3 V,数円～数十円,同値・同耐圧・同サイズ品
+RFBB,24.9k 1%,Resistor_SMD:R_0603_1608Metric,C25843,JLCPCB SMT,1,Buck feedback lower,数円～数十円,同値・同耐圧・同サイズ品
+REN,10k,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB SMT,1,EN pull-up,数円～数十円,同値・同耐圧・同サイズ品
+RBOOT,10k,Resistor_SMD:R_0603_1608Metric,C25804,JLCPCB SMT,1,GPIO9 boot pull-up,数円～数十円,同値・同耐圧・同サイズ品
+RCC1,5.1k 1%,Resistor_SMD:R_0603_1608Metric,C23186,JLCPCB SMT,1,USB-C CC1 sink resistor,数円～数十円,同値・同耐圧・同サイズ品
+RCC2,5.1k 1%,Resistor_SMD:R_0603_1608Metric,C23186,JLCPCB SMT,1,USB-C CC2 sink resistor,数円～数十円,同値・同耐圧・同サイズ品
+RG,100R,Resistor_SMD:R_0603_1608Metric,C22775,JLCPCB SMT,1,MOSFET gate resistor,数円～数十円,同値・同耐圧・同サイズ品
+RPD,100k,Resistor_SMD:R_0603_1608Metric,C25803,JLCPCB SMT,1,MOSFET gate pull-down,数円～数十円,同値・同耐圧・同サイズ品
+CIN1,2.2uF 50V,Capacitor_SMD:C_1206_3216Metric,C23630,JLCPCB SMT,1,Buck input capacitor,数円～数十円,同値・同耐圧・同サイズ品
+CIN2,220nF 100V,Capacitor_SMD:C_0603_1608Metric,C282519,JLCPCB SMT,1,Buck high-frequency input bypass,数円～数十円,同値・同耐圧・同サイズ品
+CBOOT,100nF 25V,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB SMT,1,Buck bootstrap,数円～数十円,同値・同耐圧・同サイズ品
+CVCC,1uF 10V,Capacitor_SMD:C_0603_1608Metric,C15849,JLCPCB SMT,1,Buck VCC bypass,数円～数十円,同値・同耐圧・同サイズ品
+COUT1,22uF 10V,Capacitor_SMD:C_0805_2012Metric,C45783,JLCPCB SMT,1,Buck output capacitor,数円～数十円,同値・同耐圧・同サイズ品
+COUT2,22uF 10V,Capacitor_SMD:C_0805_2012Metric,C45783,JLCPCB SMT,1,Buck output capacitor,数円～数十円,同値・同耐圧・同サイズ品
+C3V3,10uF 10V,Capacitor_SMD:C_0805_2012Metric,C15850,JLCPCB SMT,1,ESP32 bulk decoupling,数円～数十円,同値・同耐圧・同サイズ品
+CDEC,100nF,Capacitor_SMD:C_0603_1608Metric,C14663,JLCPCB SMT,1,ESP32 local decoupling,数円～数十円,同値・同耐圧・同サイズ品
+CEN,1uF 10V,Capacitor_SMD:C_0603_1608Metric,C15849,JLCPCB SMT,1,EN reset delay,数円～数十円,同値・同耐圧・同サイズ品

@@ -1,0 +1,187 @@
+** Drc report for esp32-c3-compact-dip-led.kicad_pcb **
+** Created on 2026-10-18T09:37:55+0900 **
+
+** Found 28 DRC violations **
+[clearance]: クリアランス違反 (ネットクラス 'Default' クリアランス 0.2000 mm; 現状 0.0500 mm)
+    ルール: ネットクラス 'Default'; error
+    @(45.0000 mm, 16.2500 mm): ビア [CC1] (F.Cu - B.Cu 上)
+    @(44.9550 mm, 15.7500 mm): パッド B7 [<no net>] - J2 ( F.Cu 上)
+[clearance]: クリアランス違反 (ネットクラス 'Default' クリアランス 0.2000 mm; 現状 0.0500 mm)
+    ルール: ネットクラス 'Default'; error
+    @(45.0000 mm, 13.2500 mm): ビア [CC2] (F.Cu - B.Cu 上)
+    @(44.9550 mm, 13.7500 mm): パッド A8 [<no net>] - J2 ( F.Cu 上)
+[hole_clearance]: 穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2500 mm; 現状 0.2000 mm)
+    ルール: 基板の設定の穴の制約; error
+    @(44.9550 mm, 13.7500 mm): パッド A8 [<no net>] - J2 ( F.Cu 上)
+    @(45.0000 mm, 13.2500 mm): ビア [CC2] (F.Cu - B.Cu 上)
+[hole_clearance]: 穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2500 mm; 現状 0.2000 mm)
+    ルール: 基板の設定の穴の制約; error
+    @(44.9550 mm, 15.7500 mm): パッド B7 [<no net>] - J2 ( F.Cu 上)
+    @(45.0000 mm, 16.2500 mm): ビア [CC1] (F.Cu - B.Cu 上)
+[hole_clearance]: 穴のクリアランス違反 (基板の設定の穴の制約 クリアランス 0.2500 mm; 現状 0.2000 mm)
+    ルール: 基板の設定の穴の制約; error
+    @(44.9550 mm, 16.7500 mm): パッド B8 [<no net>] - J2 ( F.Cu 上)
+    @(45.0000 mm, 16.2500 mm): ビア [CC1] (F.Cu - B.Cu 上)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(25.7750 mm, 66.0000 mm): パッド 2 [GND] - CVCC ( F.Cu 上)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー B.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] B.Cu 上, 優先度 0
+    @(13.0000 mm, 61.9400 mm): PTHパッド 12 [GND] (JH1)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー B.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] B.Cu 上, 優先度 0
+    @(43.0000 mm, 34.0000 mm): PTHパッド 1 [GND] (JH2)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(13.0000 mm, 34.0000 mm): PTHパッド 1 [GND] (JH1)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(24.5250 mm, 52.0950 mm): パッド 1 [GND] - U2 ( F.Cu 上)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(43.0000 mm, 34.0000 mm): PTHパッド 1 [GND] (JH2)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(44.9550 mm, 11.7500 mm): パッド A12 [GND] - J2 ( F.Cu 上)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(44.9550 mm, 11.7500 mm): パッド B1 [GND] - J2 ( F.Cu 上)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(31.8250 mm, 62.0000 mm): パッド 2 [GND] - RFBB ( F.Cu 上)
+[starved_thermal]: ゾーンへのサーマルリリーフ接続が不完全 (レイヤー F.Cu; ゾーン 最小スポーク数: 2; 現状 1)
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(29.7750 mm, 30.0000 mm): パッド 2 [GND] - CDEC ( F.Cu 上)
+[hole_to_hole]: ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2495 mm; 現状 0.0000 mm)
+    ルール: 基板の設定の制約; warning
+    @(8.0000 mm, 50.7000 mm): PTHパッド 6 [PROG_3V3] (J4)
+    @(8.0000 mm, 50.7500 mm): ビア [PROG_3V3] (F.Cu - B.Cu 上)
+[hole_to_hole]: ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2495 mm; 現状 0.0000 mm)
+    ルール: 基板の設定の制約; warning
+    @(8.0000 mm, 40.5000 mm): ビア [GPIO9_BOOT] (F.Cu - B.Cu 上)
+    @(8.0000 mm, 40.5400 mm): PTHパッド 2 [GPIO9_BOOT] (J4)
+[hole_to_hole]: ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2495 mm; 現状 0.0000 mm)
+    ルール: 基板の設定の制約; warning
+    @(8.0000 mm, 45.5000 mm): ビア [UART_RX_GPIO20] (F.Cu - B.Cu 上)
+    @(8.0000 mm, 45.6200 mm): PTHパッド 4 [UART_RX_GPIO20] (J4)
+[hole_to_hole]: ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2495 mm; 現状 0.0000 mm)
+    ルール: 基板の設定の制約; warning
+    @(8.0000 mm, 40.5000 mm): ビア [GPIO9_BOOT] (F.Cu - B.Cu 上)
+    @(8.0000 mm, 40.5400 mm): PTHパッド 2 [GPIO9_BOOT] (J4)
+[hole_to_hole]: ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2495 mm; 現状 0.0000 mm)
+    ルール: 基板の設定の制約; warning
+    @(8.0000 mm, 45.5000 mm): ビア [UART_RX_GPIO20] (F.Cu - B.Cu 上)
+    @(8.0000 mm, 45.6200 mm): PTHパッド 4 [UART_RX_GPIO20] (J4)
+[hole_to_hole]: ドリル穴と他の穴が近過ぎる (基板の設定の制約 最小 0.2495 mm; 現状 0.0000 mm)
+    ルール: 基板の設定の制約; warning
+    @(8.0000 mm, 50.7000 mm): PTHパッド 6 [PROG_3V3] (J4)
+    @(8.0000 mm, 50.7500 mm): ビア [PROG_3V3] (F.Cu - B.Cu 上)
+[silk_over_copper]: ハンダマスクでシルクスクリーンが切り取られている
+    ローカル オーバーライド; warning
+    @(8.0000 mm, 47.0000 mm): 基板上のテキスト 'A105 G B E T R 3V3' ( F.Silkscreen 上)
+[silk_over_copper]: ハンダマスクでシルクスクリーンが切り取られている
+    ローカル オーバーライド; warning
+    @(38.0000 mm, 41.5000 mm): 基板上のテキスト 'JP1 USB / DC' ( F.Silkscreen 上)
+[silk_over_copper]: ハンダマスクでシルクスクリーンが切り取られている
+    ローカル オーバーライド; warning
+    @(18.0000 mm, 41.5000 mm): 基板上のテキスト 'JP2 REG / A105' ( F.Silkscreen 上)
+[silk_overlap]: シルクスクリーンのオーバーラップ
+    ルール: 基板の設定のシルクスクリーンの制約; warning
+    @(8.0000 mm, 47.0000 mm): 基板上のテキスト 'A105 G B E T R 3V3' ( F.Silkscreen 上)
+    @(6.6200 mm, 52.0800 mm): セグメント of J4 、F.Silkscreen 上
+[silk_overlap]: シルクスクリーンのオーバーラップ
+    ルール: 基板の設定のシルクスクリーンの制約; warning
+    @(14.3800 mm, 35.2700 mm): セグメント of JH1 、F.Silkscreen 上
+    @(18.0000 mm, 41.5000 mm): 基板上のテキスト 'JP2 REG / A105' ( F.Silkscreen 上)
+[silk_overlap]: シルクスクリーンのオーバーラップ
+    ルール: 基板の設定のシルクスクリーンの制約; warning
+    @(51.7200 mm, 77.6200 mm): セグメント of J3 、F.Silkscreen 上
+    @(51.0000 mm, 74.0000 mm): 基板上のテキスト 'LED + / PWM-' ( F.Silkscreen 上)
+[silk_overlap]: シルクスクリーンのオーバーラップ
+    ルール: 基板の設定のシルクスクリーンの制約; warning
+    @(51.1000 mm, 77.6200 mm): セグメント of J3 、F.Silkscreen 上
+    @(51.0000 mm, 74.0000 mm): 基板上のテキスト 'LED + / PWM-' ( F.Silkscreen 上)
+
+** Found 17 unconnected pads **
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(8.0000 mm, 38.0000 mm): PTHパッド 1 [GND] (J4)
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] B.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(19.2500 mm, 24.0000 mm): パッド 9 [GND] - U1 ( F.Cu 上)
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+    @(3.3000 mm, 4.3000 mm): ゾーン [GND] F.Cu 上, 優先度 0
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(18.0000 mm, 45.0000 mm): パッド 2 [SYS_3V3] - JP2 ( F.Cu 上)
+    @(16.5000 mm, 36.5000 mm): 配線 [SYS_3V3] ( F.Cu 上、長さ: 0.2500 mm )
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(28.2500 mm, 32.0000 mm): 配線 [SYS_3V3] ( F.Cu 上、長さ: 0.2500 mm )
+    @(28.2250 mm, 30.0000 mm): パッド 1 [SYS_3V3] - CDEC ( F.Cu 上)
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(43.0000 mm, 56.8600 mm): PTHパッド 10 [SYS_3V3] (JH2)
+    @(34.1750 mm, 32.0000 mm): 配線 [SYS_3V3] ( F.Cu 上、長さ: 0.0750 mm )
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(13.0000 mm, 39.0800 mm): PTHパッド 3 [GPIO0] (JH1)
+    @(36.7500 mm, 12.0000 mm): パッド 18 [GPIO0] - U1 ( F.Cu 上)
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(13.0000 mm, 54.3200 mm): PTHパッド 9 [GPIO6] (JH1)
+    @(19.2500 mm, 18.0000 mm): パッド 5 [GPIO6] - U1 ( F.Cu 上)
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(13.0000 mm, 59.4000 mm): PTHパッド 11 [GPIO8] (JH1)
+    @(19.2500 mm, 21.0000 mm): パッド 7 [GPIO8] - U1 ( F.Cu 上)
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(36.7000 mm, 45.0000 mm): パッド 1 [USB_5V] - JP1 ( F.Cu 上)
+    @(44.9550 mm, 17.4500 mm): パッド A4 [USB_5V] - J2 ( F.Cu 上)
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(44.9550 mm, 17.4500 mm): パッド A4 [USB_5V] - J2 ( F.Cu 上)
+    @(44.9550 mm, 12.5500 mm): パッド A9 [USB_5V] - J2 ( F.Cu 上)
+[unconnected_items]: アイテム間の接続が見つからない
+    ローカル オーバーライド; error
+    @(39.3000 mm, 45.0000 mm): パッド 3 [DC_RAW] - JP1 ( F.Cu 上)
+    @(39.2500 mm, 75.0000 mm): 配線 [DC_RAW] ( F.Cu 上、長さ: 0.2500 mm )
+
+** Found 0 Footprint errors **
+
+** End of Report **

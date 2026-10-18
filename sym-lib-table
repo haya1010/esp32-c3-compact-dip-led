@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "esp32-c3-compact-dip-led-cache") (type "Legacy") (uri "${KIPRJMOD}/esp32-c3-compact-dip-led-cache.lib") (options "") (descr ""))
+)

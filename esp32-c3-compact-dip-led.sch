@@ -1,0 +1,740 @@
+EESchema Schematic File Version 4
+LIBS:esp32-c3-compact-dip-led-cache
+EELAYER 29 0
+EELAYER END
+$Descr A3 16535 11693
+Sheet 1 1
+Title "ESP32-C3 Compact DIP + PWM"
+Comment1 "Power-only USB-C; selectable USB/DC input; selectable regulator/A105 3V3"
+$EndDescr
+$Comp
+L esp32-c3-compact-dip-led-cache:U1_SYM U1
+U 1 1 73000000
+P 1000 1200
+F 0 "U1" H 1000 1100 50  0000 C CNN
+F 1 "ESP32-C3-WROOM-02-N4" H 1000 1300 50  0000 C CNN
+	1    1000 1200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	500 750 350 750
+Text Label 350 750 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	1500 750 1650 750
+Text Label 1650 750 0    40   ~ 0
+EN
+Wire Wire Line
+	500 850 350 850
+Text Label 350 850 0    40   ~ 0
+GPIO4_PWM
+Wire Wire Line
+	1500 850 1650 850
+Text Label 1650 850 0    40   ~ 0
+GPIO5
+Wire Wire Line
+	500 950 350 950
+Text Label 350 950 0    40   ~ 0
+GPIO6
+Wire Wire Line
+	1500 950 1650 950
+Text Label 1650 950 0    40   ~ 0
+GPIO7
+Wire Wire Line
+	500 1050 350 1050
+Text Label 350 1050 0    40   ~ 0
+GPIO8
+Wire Wire Line
+	1500 1050 1650 1050
+Text Label 1650 1050 0    40   ~ 0
+GPIO9_BOOT
+Wire Wire Line
+	500 1150 350 1150
+Text Label 350 1150 0    40   ~ 0
+GND
+Wire Wire Line
+	1500 1150 1650 1150
+Text Label 1650 1150 0    40   ~ 0
+GPIO10
+Wire Wire Line
+	500 1250 350 1250
+Text Label 350 1250 0    40   ~ 0
+UART_RX_GPIO20
+Wire Wire Line
+	1500 1250 1650 1250
+Text Label 1650 1250 0    40   ~ 0
+UART_TX_GPIO21
+Wire Wire Line
+	500 1350 350 1350
+Text Label 350 1350 0    40   ~ 0
+GPIO18
+Wire Wire Line
+	1500 1350 1650 1350
+Text Label 1650 1350 0    40   ~ 0
+GPIO19
+Wire Wire Line
+	500 1450 350 1450
+Text Label 350 1450 0    40   ~ 0
+GPIO3
+Wire Wire Line
+	1500 1450 1650 1450
+Text Label 1650 1450 0    40   ~ 0
+GPIO2
+Wire Wire Line
+	500 1550 350 1550
+Text Label 350 1550 0    40   ~ 0
+GPIO1
+Wire Wire Line
+	1500 1550 1650 1550
+Text Label 1650 1550 0    40   ~ 0
+GPIO0
+Wire Wire Line
+	500 1650 350 1650
+Text Label 350 1650 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:U2_SYM U2
+U 1 1 73000001
+P 3400 1200
+F 0 "U2" H 3400 1100 50  0000 C CNN
+F 1 "LMR36510FADDAR" H 3400 1300 50  0000 C CNN
+	1    3400 1200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	2900 1000 2750 1000
+Text Label 2750 1000 0    40   ~ 0
+GND
+Wire Wire Line
+	3900 1000 4050 1000
+Text Label 4050 1000 0    40   ~ 0
+REG_IN
+Wire Wire Line
+	2900 1100 2750 1100
+Text Label 2750 1100 0    40   ~ 0
+REG_IN
+NoConn ~ 3900 1100
+Wire Wire Line
+	2900 1200 2750 1200
+Text Label 2750 1200 0    40   ~ 0
+BUCK_FB
+Wire Wire Line
+	3900 1200 4050 1200
+Text Label 4050 1200 0    40   ~ 0
+BUCK_VCC
+Wire Wire Line
+	2900 1300 2750 1300
+Text Label 2750 1300 0    40   ~ 0
+BUCK_BOOT
+Wire Wire Line
+	3900 1300 4050 1300
+Text Label 4050 1300 0    40   ~ 0
+BUCK_SW
+Wire Wire Line
+	2900 1400 2750 1400
+Text Label 2750 1400 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:J1_SYM J1
+U 1 1 73000002
+P 5800 1200
+F 0 "J1" H 5800 1100 50  0000 C CNN
+F 1 "PJ-102A compatible 5.5/2.1mm" H 5800 1300 50  0000 C CNN
+	1    5800 1200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5300 1150 5150 1150
+Text Label 5150 1150 0    40   ~ 0
+DC_RAW
+Wire Wire Line
+	6300 1150 6450 1150
+Text Label 6450 1150 0    40   ~ 0
+GND
+Wire Wire Line
+	5300 1250 5150 1250
+Text Label 5150 1250 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:J2_SYM J2
+U 1 1 73000003
+P 8200 1200
+F 0 "J2" H 8200 1100 50  0000 C CNN
+F 1 "USB-C POWER ONLY" H 8200 1300 50  0000 C CNN
+	1    8200 1200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	7700 800 7550 800
+Text Label 7550 800 0    40   ~ 0
+GND
+Wire Wire Line
+	8700 800 8850 800
+Text Label 8850 800 0    40   ~ 0
+GND
+Wire Wire Line
+	7700 900 7550 900
+Text Label 7550 900 0    40   ~ 0
+USB_5V
+Wire Wire Line
+	8700 900 8850 900
+Text Label 8850 900 0    40   ~ 0
+CC1
+NoConn ~ 7700 1000
+NoConn ~ 8700 1000
+NoConn ~ 7700 1100
+Wire Wire Line
+	8700 1100 8850 1100
+Text Label 8850 1100 0    40   ~ 0
+USB_5V
+Wire Wire Line
+	7700 1200 7550 1200
+Text Label 7550 1200 0    40   ~ 0
+GND
+Wire Wire Line
+	8700 1200 8850 1200
+Text Label 8850 1200 0    40   ~ 0
+GND
+Wire Wire Line
+	7700 1300 7550 1300
+Text Label 7550 1300 0    40   ~ 0
+USB_5V
+Wire Wire Line
+	8700 1300 8850 1300
+Text Label 8850 1300 0    40   ~ 0
+CC2
+NoConn ~ 7700 1400
+NoConn ~ 8700 1400
+NoConn ~ 7700 1500
+Wire Wire Line
+	8700 1500 8850 1500
+Text Label 8850 1500 0    40   ~ 0
+USB_5V
+Wire Wire Line
+	7700 1600 7550 1600
+Text Label 7550 1600 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:J3_SYM J3
+U 1 1 73000004
+P 10600 1200
+F 0 "J3" H 10600 1100 50  0000 C CNN
+F 1 "LED OUT" H 10600 1300 50  0000 C CNN
+	1    10600 1200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	10100 1150 9950 1150
+Text Label 9950 1150 0    40   ~ 0
+DC_RAW
+Wire Wire Line
+	11100 1150 11250 1150
+Text Label 11250 1150 0    40   ~ 0
+LED_NEG
+$Comp
+L esp32-c3-compact-dip-led-cache:J4_SYM J4
+U 1 1 73000005
+P 13000 1200
+F 0 "J4" H 13000 1100 50  0000 C CNN
+F 1 "M5STACK A105" H 13000 1300 50  0000 C CNN
+	1    13000 1200
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	12500 1100 12350 1100
+Text Label 12350 1100 0    40   ~ 0
+GND
+Wire Wire Line
+	13500 1100 13650 1100
+Text Label 13650 1100 0    40   ~ 0
+GPIO9_BOOT
+Wire Wire Line
+	12500 1200 12350 1200
+Text Label 12350 1200 0    40   ~ 0
+EN
+Wire Wire Line
+	13500 1200 13650 1200
+Text Label 13650 1200 0    40   ~ 0
+UART_RX_GPIO20
+Wire Wire Line
+	12500 1300 12350 1300
+Text Label 12350 1300 0    40   ~ 0
+UART_TX_GPIO21
+Wire Wire Line
+	13500 1300 13650 1300
+Text Label 13650 1300 0    40   ~ 0
+PROG_3V3
+$Comp
+L esp32-c3-compact-dip-led-cache:JH1_SYM JH1
+U 1 1 73000006
+P 1000 3100
+F 0 "JH1" H 1000 3000 50  0000 C CNN
+F 1 "DIP LEFT" H 1000 3200 50  0000 C CNN
+	1    1000 3100
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	500 2850 350 2850
+Text Label 350 2850 0    40   ~ 0
+GND
+Wire Wire Line
+	1500 2850 1650 2850
+Text Label 1650 2850 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	500 2950 350 2950
+Text Label 350 2950 0    40   ~ 0
+GPIO0
+Wire Wire Line
+	1500 2950 1650 2950
+Text Label 1650 2950 0    40   ~ 0
+GPIO1
+Wire Wire Line
+	500 3050 350 3050
+Text Label 350 3050 0    40   ~ 0
+GPIO2
+Wire Wire Line
+	1500 3050 1650 3050
+Text Label 1650 3050 0    40   ~ 0
+GPIO3
+Wire Wire Line
+	500 3150 350 3150
+Text Label 350 3150 0    40   ~ 0
+GPIO4_PWM
+Wire Wire Line
+	1500 3150 1650 3150
+Text Label 1650 3150 0    40   ~ 0
+GPIO5
+Wire Wire Line
+	500 3250 350 3250
+Text Label 350 3250 0    40   ~ 0
+GPIO6
+Wire Wire Line
+	1500 3250 1650 3250
+Text Label 1650 3250 0    40   ~ 0
+GPIO7
+Wire Wire Line
+	500 3350 350 3350
+Text Label 350 3350 0    40   ~ 0
+GPIO8
+Wire Wire Line
+	1500 3350 1650 3350
+Text Label 1650 3350 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:JH2_SYM JH2
+U 1 1 73000007
+P 3400 3100
+F 0 "JH2" H 3400 3000 50  0000 C CNN
+F 1 "DIP RIGHT" H 3400 3200 50  0000 C CNN
+	1    3400 3100
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	2900 2850 2750 2850
+Text Label 2750 2850 0    40   ~ 0
+GND
+NoConn ~ 3900 2850
+NoConn ~ 2900 2950
+NoConn ~ 3900 2950
+NoConn ~ 2900 3050
+Wire Wire Line
+	3900 3050 4050 3050
+Text Label 4050 3050 0    40   ~ 0
+GPIO19
+Wire Wire Line
+	2900 3150 2750 3150
+Text Label 2750 3150 0    40   ~ 0
+GPIO18
+Wire Wire Line
+	3900 3150 4050 3150
+Text Label 4050 3150 0    40   ~ 0
+UART_TX_GPIO21
+Wire Wire Line
+	2900 3250 2750 3250
+Text Label 2750 3250 0    40   ~ 0
+UART_RX_GPIO20
+Wire Wire Line
+	3900 3250 4050 3250
+Text Label 4050 3250 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	2900 3350 2750 3350
+Text Label 2750 3350 0    40   ~ 0
+GPIO10
+Wire Wire Line
+	3900 3350 4050 3350
+Text Label 4050 3350 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:JP1_SYM JP1
+U 1 1 73000008
+P 5800 3100
+F 0 "JP1" H 5800 3000 50  0000 C CNN
+F 1 "INPUT USB|DC" H 5800 3200 50  0000 C CNN
+	1    5800 3100
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5300 3050 5150 3050
+Text Label 5150 3050 0    40   ~ 0
+USB_5V
+Wire Wire Line
+	6300 3050 6450 3050
+Text Label 6450 3050 0    40   ~ 0
+REG_IN
+Wire Wire Line
+	5300 3150 5150 3150
+Text Label 5150 3150 0    40   ~ 0
+DC_RAW
+$Comp
+L esp32-c3-compact-dip-led-cache:JP2_SYM JP2
+U 1 1 73000009
+P 8200 3100
+F 0 "JP2" H 8200 3000 50  0000 C CNN
+F 1 "3V3 REG|A105" H 8200 3200 50  0000 C CNN
+	1    8200 3100
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	7700 3050 7550 3050
+Text Label 7550 3050 0    40   ~ 0
+REG_3V3
+Wire Wire Line
+	8700 3050 8850 3050
+Text Label 8850 3050 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	7700 3150 7550 3150
+Text Label 7550 3150 0    40   ~ 0
+PROG_3V3
+$Comp
+L esp32-c3-compact-dip-led-cache:Q1_SYM Q1
+U 1 1 7300000A
+P 10600 3100
+F 0 "Q1" H 10600 3000 50  0000 C CNN
+F 1 "RJP020N06T100" H 10600 3200 50  0000 C CNN
+	1    10600 3100
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	10100 3050 9950 3050
+Text Label 9950 3050 0    40   ~ 0
+MOS_GATE
+Wire Wire Line
+	11100 3050 11250 3050
+Text Label 11250 3050 0    40   ~ 0
+LED_NEG
+Wire Wire Line
+	10100 3150 9950 3150
+Text Label 9950 3150 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:L1_SYM L1
+U 1 1 7300000B
+P 13000 3100
+F 0 "L1" H 13000 3000 50  0000 C CNN
+F 1 "22uH >=1.5A" H 13000 3200 50  0000 C CNN
+	1    13000 3100
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	12500 3050 12350 3050
+Text Label 12350 3050 0    40   ~ 0
+BUCK_SW
+Wire Wire Line
+	13500 3050 13650 3050
+Text Label 13650 3050 0    40   ~ 0
+REG_3V3
+$Comp
+L esp32-c3-compact-dip-led-cache:RFBT_SYM RFBT
+U 1 1 7300000C
+P 1000 5000
+F 0 "RFBT" H 1000 4900 50  0000 C CNN
+F 1 "57.6k 1%" H 1000 5100 50  0000 C CNN
+	1    1000 5000
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	500 4950 350 4950
+Text Label 350 4950 0    40   ~ 0
+REG_3V3
+Wire Wire Line
+	1500 4950 1650 4950
+Text Label 1650 4950 0    40   ~ 0
+BUCK_FB
+$Comp
+L esp32-c3-compact-dip-led-cache:RFBB_SYM RFBB
+U 1 1 7300000D
+P 3400 5000
+F 0 "RFBB" H 3400 4900 50  0000 C CNN
+F 1 "24.9k 1%" H 3400 5100 50  0000 C CNN
+	1    3400 5000
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	2900 4950 2750 4950
+Text Label 2750 4950 0    40   ~ 0
+BUCK_FB
+Wire Wire Line
+	3900 4950 4050 4950
+Text Label 4050 4950 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:REN_SYM REN
+U 1 1 7300000E
+P 5800 5000
+F 0 "REN" H 5800 4900 50  0000 C CNN
+F 1 "10k" H 5800 5100 50  0000 C CNN
+	1    5800 5000
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5300 4950 5150 4950
+Text Label 5150 4950 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	6300 4950 6450 4950
+Text Label 6450 4950 0    40   ~ 0
+EN
+$Comp
+L esp32-c3-compact-dip-led-cache:RBOOT_SYM RBOOT
+U 1 1 7300000F
+P 8200 5000
+F 0 "RBOOT" H 8200 4900 50  0000 C CNN
+F 1 "10k" H 8200 5100 50  0000 C CNN
+	1    8200 5000
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	7700 4950 7550 4950
+Text Label 7550 4950 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	8700 4950 8850 4950
+Text Label 8850 4950 0    40   ~ 0
+GPIO9_BOOT
+$Comp
+L esp32-c3-compact-dip-led-cache:RCC1_SYM RCC1
+U 1 1 73000010
+P 10600 5000
+F 0 "RCC1" H 10600 4900 50  0000 C CNN
+F 1 "5.1k 1%" H 10600 5100 50  0000 C CNN
+	1    10600 5000
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	10100 4950 9950 4950
+Text Label 9950 4950 0    40   ~ 0
+GND
+Wire Wire Line
+	11100 4950 11250 4950
+Text Label 11250 4950 0    40   ~ 0
+CC1
+$Comp
+L esp32-c3-compact-dip-led-cache:RCC2_SYM RCC2
+U 1 1 73000011
+P 13000 5000
+F 0 "RCC2" H 13000 4900 50  0000 C CNN
+F 1 "5.1k 1%" H 13000 5100 50  0000 C CNN
+	1    13000 5000
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	12500 4950 12350 4950
+Text Label 12350 4950 0    40   ~ 0
+GND
+Wire Wire Line
+	13500 4950 13650 4950
+Text Label 13650 4950 0    40   ~ 0
+CC2
+$Comp
+L esp32-c3-compact-dip-led-cache:RG_SYM RG
+U 1 1 73000012
+P 1000 6900
+F 0 "RG" H 1000 6800 50  0000 C CNN
+F 1 "100R" H 1000 7000 50  0000 C CNN
+	1    1000 6900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	500 6850 350 6850
+Text Label 350 6850 0    40   ~ 0
+GPIO4_PWM
+Wire Wire Line
+	1500 6850 1650 6850
+Text Label 1650 6850 0    40   ~ 0
+MOS_GATE
+$Comp
+L esp32-c3-compact-dip-led-cache:RPD_SYM RPD
+U 1 1 73000013
+P 3400 6900
+F 0 "RPD" H 3400 6800 50  0000 C CNN
+F 1 "100k" H 3400 7000 50  0000 C CNN
+	1    3400 6900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	2900 6850 2750 6850
+Text Label 2750 6850 0    40   ~ 0
+MOS_GATE
+Wire Wire Line
+	3900 6850 4050 6850
+Text Label 4050 6850 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:CIN1_SYM CIN1
+U 1 1 73000014
+P 5800 6900
+F 0 "CIN1" H 5800 6800 50  0000 C CNN
+F 1 "2.2uF 50V" H 5800 7000 50  0000 C CNN
+	1    5800 6900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5300 6850 5150 6850
+Text Label 5150 6850 0    40   ~ 0
+REG_IN
+Wire Wire Line
+	6300 6850 6450 6850
+Text Label 6450 6850 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:CIN2_SYM CIN2
+U 1 1 73000015
+P 8200 6900
+F 0 "CIN2" H 8200 6800 50  0000 C CNN
+F 1 "220nF 100V" H 8200 7000 50  0000 C CNN
+	1    8200 6900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	7700 6850 7550 6850
+Text Label 7550 6850 0    40   ~ 0
+REG_IN
+Wire Wire Line
+	8700 6850 8850 6850
+Text Label 8850 6850 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:CBOOT_SYM CBOOT
+U 1 1 73000016
+P 10600 6900
+F 0 "CBOOT" H 10600 6800 50  0000 C CNN
+F 1 "100nF 25V" H 10600 7000 50  0000 C CNN
+	1    10600 6900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	10100 6850 9950 6850
+Text Label 9950 6850 0    40   ~ 0
+BUCK_BOOT
+Wire Wire Line
+	11100 6850 11250 6850
+Text Label 11250 6850 0    40   ~ 0
+BUCK_SW
+$Comp
+L esp32-c3-compact-dip-led-cache:CVCC_SYM CVCC
+U 1 1 73000017
+P 13000 6900
+F 0 "CVCC" H 13000 6800 50  0000 C CNN
+F 1 "1uF 10V" H 13000 7000 50  0000 C CNN
+	1    13000 6900
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	12500 6850 12350 6850
+Text Label 12350 6850 0    40   ~ 0
+BUCK_VCC
+Wire Wire Line
+	13500 6850 13650 6850
+Text Label 13650 6850 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:COUT1_SYM COUT1
+U 1 1 73000018
+P 1000 8800
+F 0 "COUT1" H 1000 8700 50  0000 C CNN
+F 1 "22uF 10V" H 1000 8900 50  0000 C CNN
+	1    1000 8800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	500 8750 350 8750
+Text Label 350 8750 0    40   ~ 0
+REG_3V3
+Wire Wire Line
+	1500 8750 1650 8750
+Text Label 1650 8750 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:COUT2_SYM COUT2
+U 1 1 73000019
+P 3400 8800
+F 0 "COUT2" H 3400 8700 50  0000 C CNN
+F 1 "22uF 10V" H 3400 8900 50  0000 C CNN
+	1    3400 8800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	2900 8750 2750 8750
+Text Label 2750 8750 0    40   ~ 0
+REG_3V3
+Wire Wire Line
+	3900 8750 4050 8750
+Text Label 4050 8750 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:C3V3_SYM C3V3
+U 1 1 7300001A
+P 5800 8800
+F 0 "C3V3" H 5800 8700 50  0000 C CNN
+F 1 "10uF 10V" H 5800 8900 50  0000 C CNN
+	1    5800 8800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	5300 8750 5150 8750
+Text Label 5150 8750 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	6300 8750 6450 8750
+Text Label 6450 8750 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:CDEC_SYM CDEC
+U 1 1 7300001B
+P 8200 8800
+F 0 "CDEC" H 8200 8700 50  0000 C CNN
+F 1 "100nF" H 8200 8900 50  0000 C CNN
+	1    8200 8800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	7700 8750 7550 8750
+Text Label 7550 8750 0    40   ~ 0
+SYS_3V3
+Wire Wire Line
+	8700 8750 8850 8750
+Text Label 8850 8750 0    40   ~ 0
+GND
+$Comp
+L esp32-c3-compact-dip-led-cache:CEN_SYM CEN
+U 1 1 7300001C
+P 10600 8800
+F 0 "CEN" H 10600 8700 50  0000 C CNN
+F 1 "1uF 10V" H 10600 8900 50  0000 C CNN
+	1    10600 8800
+	1 0 0 -1
+$EndComp
+Wire Wire Line
+	10100 8750 9950 8750
+Text Label 9950 8750 0    40   ~ 0
+EN
+Wire Wire Line
+	11100 8750 11250 8750
+Text Label 11250 8750 0    40   ~ 0
+GND
+Text Notes 700 500 0    100  ~ 20
+JP1: BRIDGE ONE SIDE ONLY. JP2: REGULATOR OR A105 POWER, NEVER BOTH.
+$EndSCHEMATC
